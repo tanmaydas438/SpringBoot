@@ -19,5 +19,16 @@ public class TrackCoach implements Coach {
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
+	
+	// Bean Initialization custom method
+	public void startup()
+	{
+		System.out.println("Initialization method");
+	}
+	// Bean destroy custom method
+	public void destroy()
+	{
+		System.out.println("Destroy method");
+	}
 
 }
